@@ -1,0 +1,42 @@
+{
+	"pros": {
+		"bob.bob@gmail.com" : {
+			"job": 0,
+			"nom": "bob",
+			"prenom": "bob",
+			"login": "bobbob",
+			"motdepasse": "bobbob",
+			"adresse": "10 chemin des palmiers 38100 SMH",
+			"centre": 1,
+			"etat": 0
+		},
+		"candassamy.arvind@gmail.com" : {
+			"job": 3,
+			"nom": "candassamy",
+			"prenom": "arvind",
+			"login": "candacvl",
+			"motdepasse": "CPF",
+			"adresse": "10 chemin des patates 38100 GRENOBLE",
+			"centre": 2,
+			"etat": 3
+		}
+	},
+	"centres": {
+		"Grenoble Soin": {
+			"adresse": "52 route de Bellevue 38000 GRENOBLE",
+			"capacite": 82,
+			"activites": {
+				"Urgences",
+				"Reeducation"
+			}
+		},
+		"Echirolles Secours": {
+			"adresse": "2 avenue du pommier 38000 ECHIROLLES",
+			"nbvehicules": 3
+		},
+		"SMH Regulation": {
+			"adresse": "24 allée du campus 38100 SMH",
+			"capacite": 16
+		}
+	}
+}

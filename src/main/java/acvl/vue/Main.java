@@ -1,17 +1,18 @@
-package com.example.acvlfx;
+package acvl.controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ConnectView.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        Parent root = FXMLLoader.load(this.getClass().getResource("ConnectView.fxml"));
+        Scene scene = new Scene(root);
         stage.setTitle("CandACVL");
         stage.setScene(scene);
         stage.show();
