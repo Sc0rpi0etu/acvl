@@ -1,17 +1,19 @@
-package Modéle;
+package acvl.modele;
 
-public class Etat {
-    private Nom_Etat etatActuel;
-    private String motif;
+public enum Nom_Etat {
+    disponible_base,
+    en_attente_intervention,
+    disponible_hors_base,
+    intervention,
+    indisponible;
 
-    public Etat(Nom_Etat etatActuel, String motif) {
-        this.etatActuel = etatActuel;
+    public String motif;
+
+    Nom_Etat(String motif) {
         this.motif = motif;
     }
 
-    public Etat(Nom_Etat etatActuel) {
-        this.etatActuel = etatActuel;
+    Nom_Etat() {
+
     }
-
-
 }
