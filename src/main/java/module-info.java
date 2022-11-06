@@ -1,4 +1,4 @@
-module com.example.acvlfx {
+module acvl {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,14 @@ module com.example.acvlfx {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
+    requires java.security.jgss;
+    requires json.simple;
 
-    opens com.example.acvlfx to javafx.fxml;
-    exports com.example.acvlfx;
+    opens acvl.vue to javafx.fxml;
+    exports acvl.vue;
+    exports acvl.controller;
+    opens acvl.controller to javafx.fxml;
+    exports acvl.tools;
+    opens acvl.tools to javafx.fxml;
 }

@@ -41,19 +41,27 @@
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="0.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
          <children>
             <Label layoutX="37.0" layoutY="25.0" text="Métier :" />
-            <ComboBox fx:id="job" layoutX="99.0" layoutY="21.0" prefWidth="150.0" />
+            <Label fx:id="job" layoutX="99.0" layoutY="25.0" prefWidth="150.0" />
             <Label layoutX="37.0" layoutY="52.0" text="Nom :" />
-            <TextField fx:id="name" layoutX="99.0" layoutY="48.0" />
+            <Label fx:id="name" layoutX="99.0" layoutY="52.0" />
             <Label layoutX="37.0" layoutY="80.0" text="Prénom :" />
-            <TextField fx:id="firstname" layoutX="99.0" layoutY="76.0" />
+            <Label fx:id="firstname" layoutX="99.0" layoutY="80.0" />
             <Label layoutX="37.0" layoutY="107.0" text="Email :" />
-            <TextField fx:id="email" layoutX="99.0" layoutY="103.0" />
+            <Label fx:id="email" layoutX="99.0" layoutY="107.0" />
             <Label layoutX="37.0" layoutY="134.0" text="Adresse :" />
-            <TextField fx:id="address" layoutX="99.0" layoutY="130.0" />
+            <Label fx:id="address" layoutX="99.0" layoutY="134.0" />
             <Label layoutX="37.0" layoutY="161.0" text="Centre :" />
-            <TextField fx:id="centre" layoutX="99.0" layoutY="157.0" />
-            <Label layoutX="37.0" layoutY="189.0" text="Etat :" />
-            <ComboBox fx:id="state" layoutX="99.0" layoutY="185.0" prefWidth="150.0" />
+            <Label fx:id="centre" layoutX="99.0" layoutY="161.0" />
+            <Label layoutX="37.0" layoutY="186.0" text="Etat :" />
+            <ComboBox fx:id="state" layoutX="99.0" layoutY="182.0" prefWidth="150.0" />
+            <Label fx:id="patientLabel" layoutX="37.0" layoutY="213.0" text="Patient :" />
+            <ComboBox fx:id="patientComboBox" layoutX="99.0" layoutY="209.0" onAction="#select" prefWidth="150.0" />
+            <Label fx:id="avisLabel" layoutX="37.0" layoutY="238.0" text="Avis :" />
+            <TextArea fx:id="avisText" layoutX="99.0" layoutY="236.0" prefHeight="61.0" prefWidth="150.0" />
+            <Button fx:id="saveButton" layoutX="166.0" layoutY="299.0" mnemonicParsing="false" onAction="#save" text="Sauvegarder" />
+            <Label fx:id="motifLabel" layoutX="287.0" layoutY="187.0" text="Motif :" />
+            <TextArea fx:id="motifText" layoutX="349.0" layoutY="185.0" prefHeight="61.0" prefWidth="150.0" />
+            <Button fx:id="saveButtonEtat" layoutX="416.0" layoutY="248.0" mnemonicParsing="false" onAction="#saveEtat" text="Sauvegarder" />
          </children>
         </AnchorPane>
     </children>

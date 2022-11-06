@@ -1,11 +1,14 @@
-package acvl.controller;
+package acvl.vue;
 
+import acvl.tools.DatabaseLoader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.json.simple.parser.ParseException;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -15,10 +18,12 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         stage.setTitle("CandACVL");
         stage.setScene(scene);
+        stage.setOnCloseRequest(e -> DatabaseLoader.save());
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ParseException {
+        DatabaseLoader.load();
         launch();
     }
 }

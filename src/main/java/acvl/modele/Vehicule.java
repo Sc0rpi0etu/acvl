@@ -1,6 +1,5 @@
-package Modéle;
+package acvl.modele;
 
-public class Vehicule
-{
+public class Vehicule {
 
 }

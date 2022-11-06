@@ -1,5 +1,11 @@
-package Modéle;
+package acvl.modele;
 
-public  abstract class Statut {
-
+public enum Statut {
+    Régulateur,
+    Fixe,
+    Mobile;
+    @Override
+    public String toString() {
+        return this.name();
+    }
 }

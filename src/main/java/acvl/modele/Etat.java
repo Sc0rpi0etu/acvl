@@ -1,19 +1,27 @@
 package acvl.modele;
 
-public enum Nom_Etat {
+public enum Etat {
     disponible_base,
     en_attente_intervention,
     disponible_hors_base,
     intervention,
     indisponible;
 
-    public String motif;
+    String motif;
 
-    Nom_Etat(String motif) {
+    public String getMotif() {
+        return motif;
+    }
+
+    public void setMotif(String motif) {
         this.motif = motif;
     }
 
-    Nom_Etat() {
+    Etat(String motif) {
+        this.motif = motif;
+    }
+
+    Etat() {
 
     }
 }
